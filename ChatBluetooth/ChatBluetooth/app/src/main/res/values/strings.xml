@@ -1,0 +1,22 @@
+
+<resources>
+    <string name="nome_app">ChatBluetooth</string>
+    <string name="no_device_trovati">Nessun device BLE trovato</string>
+    <string name="titolo_chat">Chat</string>
+    <string name="lista_dispositivi">Accoppiamento con un nuovo device</string>
+    <string name="errore_richiesta_location">I permessi di locazione sono richiesti per supportare comunicazione Bluetooth Low Energy</string>
+    <string name="messaggio_concedi_permesso">Concedi Permessi Location</string>
+    <string name="attiva_messaggio_scan">Scanning</string>
+    <string name="bt_non_attivo">Attiva il bluetooth per iniziare lo scan dei device</string>
+    <string name="messaggio_attivazione_bluetooth">Attiva Bluetooth</string>
+    <string name="bt_ads_non_supportati">Bluetooth Advertisements non sono supportati su questo device</string>
+    <string name="messaggio_di_conferma_chat">Vuoi chattare con %1$s</string>
+    <string name="bottone_rifiuto_chat">No</string>
+    <string name="bottone_conferma_chat">Yes</string>
+    <string name="messaggio_no_dispositivi_connessi">Non connesso a un device</string>
+    <string name="messaggio_device_connesso">Connettiti con un device vicino</string>
+    <string name="bottone_invio_messaggio">Invia Messaggio</string>
+    <string name="chattando_con_device">Stai chattando con %1$s</string>
+    <string name="indirizzo_tuo_device">Indirizzo tuo device:</string>
+    <string name="scanning_header">Scegli un device con cui chattare:</string>
+</resources>

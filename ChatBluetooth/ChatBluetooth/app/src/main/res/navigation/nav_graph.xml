@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/attivaFrammentoBluetooth">
+
+    <fragment
+        android:id="@+id/frammentoChatBluetooth"
+        android:name="com.example.chatbluetooth.chat.FrammentoChatBluetooth"
+        android:label="FrammentoChatBluetooth" >
+        <action
+            android:id="@+id/azione_trova_nuovo_device"
+            app:destination="@id/frammentoListaDevice" />
+    </fragment>
+    <fragment
+        android:id="@+id/frammentoListaDevice"
+        android:name="com.example.chatbluetooth.scan.FrammentoScanDevice"
+        android:label="FrammentoListaDevice" />
+    <fragment
+        android:id="@+id/frammentoLocationRequired"
+        android:name="com.example.chatbluetooth.bluetooth.FrammentoLocationRequired"
+        android:label="FrammentoLocationRequired">
+        <action
+            android:id="@+id/azione_inizio_chat"
+            app:destination="@id/frammentoChatBluetooth" />
+    </fragment>
+    <fragment
+        android:id="@+id/attivaFrammentoBluetooth"
+        android:name="com.example.chatbluetooth.bluetooth.AttivaFrammentoBluetooth"
+        android:label="AttivaFrammentoBluetooth" >
+        <action
+            android:id="@+id/azione_controllo_location_permissions"
+            app:destination="@id/frammentoLocationRequired" />
+    </fragment>
+</navigation>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_non_connesso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/messaggio_device_connesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/messaggio_no_dispositivi_connessi"/>
+
+        <Button
+            android:id="@+id/device_connesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/messaggio_device_connesso"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_connesso"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nome_device_connesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messaggi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/testo_messaggio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/invia_messaggio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bottone_invio_messaggio"/>
+    </LinearLayout>
+
+</FrameLayout>
